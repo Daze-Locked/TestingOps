@@ -32,4 +32,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: "${{ github.event.inputs.workflow }}"
+        run: |
+          echo "Workflow :${{ github.event.inputs.workflow }}"
